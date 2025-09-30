@@ -1,0 +1,17 @@
+name: {{cookiecutter.project_slug}}
+docker_env:
+  image: {{cookiecutter.project_slug}}
+
+entry_points:
+  train:
+    parameters:
+      data_path: string
+      model_path: {type: string, default: "models/"}
+    command: "python src/train.py --data-path {data_path} --model-path {model_path}"
+  
+  predict:
+    parameters:
+      input_path: string
+      output_path: string
+      model_version: {type: string, default: "Production"}
+    command: "python src/predict.py --input-path {input_path} --output-path {output_path} --model-version {model_version}"
