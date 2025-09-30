@@ -1,0 +1,4 @@
+{
+    "project_name": "Cookiecutter MLflow mlproject",
+    "project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '_') }}"
+}
