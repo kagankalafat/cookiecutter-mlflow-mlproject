@@ -28,8 +28,7 @@ poetry env activate
 ### Generate a New Model
 
 ```bash
-git clone https://github.com/kagankalafat/cookiecutter-mlflow-mlproject
-cookiecutter ./repo-name
+cookiecutter https://github.com/kagankalafat/cookiecutter-mlflow-mlproject
 ```
 
 - Enter the model name when prompted, then press Enter.
